@@ -228,14 +228,12 @@
         - 無視したいファイル
 - ニーズがあれば次回解説！
 
-## ドキュメント
+## ドキュメント読みましょう！
 - Book
     - 日本語版　https://git-scm.com/book/ja/v2
 - チートシート
     - コマンドを覚えたい方向け[日本語版](https://github.github.com/training-kit/downloads/ja/github-git-cheat-sheet/)
-    - [PDF](https://github.github.com/
-    
-    training-kit/downloads/ja/github-git-cheat-sheet.pdf)
+    - [PDF](https://github.github.com/training-kit/downloads/ja/github-git-cheat-sheet.pdf)
 
 -------------
 
