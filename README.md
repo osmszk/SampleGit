@@ -153,17 +153,31 @@
 - パターン2: リモートで作成済みリポジトリをクローン
     - クローン(clone)
 
-### BrewでGitインストール
+### HomebrewでGitインストール
 - もしHomebrew未インストールだったら今すぐインストール！https://brew.sh/
-- `brew install git`
-- ~/.bash_profileに追記 `export PATH="/usr/local/Cellar/git/2.5.0/bin:$PATH"`
+    - HomebrewはMac用のパッケージ管理ツール。
+    - これを使えば色々ツールをMacにインストールできる。
+- Homebrewでgitをインストール
+    - `brew install git` をたたく
+- ~/.bash_profileに→を追記 `export PATH="/usr/local/Cellar/git/2.5.0/bin:$PATH"`
+    - 方法は2つ。①エディタで編集する②コマンドで一発で追加する
+    - ①エディタで編集する場合
+        - VSCodeで　~/.bash_profileをひらいて編集
+        - .bash_profileは不可視ファイルなので、Finder上でCommand+Shift+. で表示させる
+        - もし、.bash_profileがない場合はつくりましょう
+        - "~" は Homeディレクトリの意味。私の場合は `/Users/osamusuzuki/`
+    - ②コマンドで一発で追加する
+        - これ叩けばOK。
+        - `echo 'export PATH="/usr/local/Cellar/git/2.5.0/bin:$PATH"' >> ~/.bash_profile`
+- 最後に。~/.bash_profileを有効化 
+    - これ叩く → `source ~/.bash_profile`
 
 ### 日本語文字化け回避
-- `git config --local core.quotepath false`
+- `git config --global core.quotepath false`
 
 ### ユーザー名とメアド設定
-- git config --global user.name "osuzukiy"
-- git config --global user.email "osuzuki@plegineer.com"
+- `git config --global user.name "osuzukiy"`
+- `git config --global user.email "osuzuki@example.com"`
 
 ### 基本コマンド
 - `git init`
@@ -183,7 +197,7 @@
 - `git clone`
     - リモートリポジトリをダウンロードする
     - `git clone [url]`
-    - `git clone https://github.com/osmszk/BasicGit.git`
+    - `git clone https://github.com/osmszk/SampleGit.git`
 
 #### 確認系コマンド
 - `git status`
